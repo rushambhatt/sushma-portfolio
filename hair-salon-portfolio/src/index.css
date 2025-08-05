@@ -73,7 +73,6 @@ button:focus-visible {
 }
 
 .nav-bar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +85,21 @@ button:focus-visible {
   left: 0;
   right: 0;
   z-index: 1000;
+}
 
+/* Add this to your index.css or a separate CSS file */
+.hero {
+  width: 100%;
+  height: 60vh; /* Adjust height as per your preference */
+  background-image: url("/path/to/hero-image.jpg"); /* Add your own image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 3rem; /* Adjust font size */
+  text-align: center;
 }
 
 .navbar-links {
@@ -104,7 +117,6 @@ button:focus-visible {
   font-size: 10px;
   font-family: Garamond;
   color: rgb(255, 255, 255);
-
 }
 
 .contact {
@@ -126,7 +138,7 @@ button:focus-visible {
   padding: 0rem;
 }
 
-.contact-item{
+.contact-item {
   width: 200%;
   height: 200%;
 }
@@ -139,14 +151,16 @@ button:focus-visible {
   border-style: solid;
 }
 
-.home{
+.home {
   padding-top: 50px;
 }
 
-.home-photos{
+.home-photos {
   display: flex;
   padding: 0rem 2rem;
   gap: 1rem;
+  background-color: #213547;
+  background-size: 3000px 1000px;
 }
 
 .home-photo-item img {
@@ -169,8 +183,6 @@ button:focus-visible {
 .fade-out {
   opacity: 0;
 }
-
-
 
 .home-page-info {
   display: flex;
@@ -206,7 +218,7 @@ button:focus-visible {
   border-style: solid;
 }
 
-.home-page-info-item h2{
+.home-page-info-item h2 {
   font-family: "Garamond", serif;
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -217,8 +229,6 @@ button:focus-visible {
   font-size: 1rem;
   margin-top: 1rem;
 }
-
-
 
 @media (max-width: 768px) {
   .contact {
@@ -238,7 +248,7 @@ button:focus-visible {
     margin-top: 1rem;
   }
 
-  .home-photos{
+  .home-photos {
     max-width: 100%;
     margin-top: 1rem;
   }
@@ -246,6 +256,4 @@ button:focus-visible {
   .contact-text {
     text-align: center;
   }
-
 }
-
