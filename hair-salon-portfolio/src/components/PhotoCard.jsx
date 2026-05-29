@@ -1,23 +1,17 @@
+function PhotoCard({ photo, className = "" }) {
+  return (
+    <div className={`photo-card ${className}`}>
+      <img src={photo.url} alt={photo.title || "Salon photo"} />
 
-function PhotoCard({photo}) {
+      <div className="photo-overlay"></div>
 
-
-    return <div className="photo-card">
-
-                <div className={`photo-card ${className}`}>
-
-                    <img src={photo.url} alt={photo.title}/>
-
-                    <div className="photo-overlay">
-                    </div>
-                    
-                </div>
-            
-            <div className="photo-info">
-                <h3>{photo.title}</h3>
-            </div>
-            
-            </div>
+      {photo.title && (
+        <div className="photo-info">
+          <h3>{photo.title}</h3>
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default PhotoCard
+export default PhotoCard;
