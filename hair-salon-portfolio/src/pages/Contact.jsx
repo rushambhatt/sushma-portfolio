@@ -27,7 +27,13 @@ function Contact(){
             </div>
             
             <div className="contact-photo">
-                <PhotoCard className="contact-item" photo={{url: "/photos/photo5.jpeg", title: "This is me!"}}/>
+                <PhotoCard 
+                    className="contact-item" 
+                    photo={{
+                        url: `${import.meta.env.BASE_URL}photos/photo5.jpeg`,
+                        title: "This is me!"
+                    }}
+                />
             </div>
         </div>
     )
