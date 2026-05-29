@@ -5,7 +5,7 @@ const baseUrl = import.meta.env.BASE_URL;
 
 const photoGroups = [
   [`${baseUrl}photos/photo1.jpg`, `${baseUrl}photos/photo2.jpg`, `${baseUrl}photos/photo3.jpg`],
-  [`${baseUrl}photos/IMG_6241.jpg`, `${baseUrl}photos/photo2.jpg`, `${baseUrl}photos/photo3.jpg`],
+  [`${baseUrl}photos/photo4.jpeg`, `${baseUrl}photos/photo2.jpg`, `${baseUrl}photos/photo3.jpg`],
   // add more groups as needed
 ];
 
