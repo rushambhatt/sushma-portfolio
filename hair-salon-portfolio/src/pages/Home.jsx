@@ -1,9 +1,11 @@
 import PhotoCard from "../components/PhotoCard";
 import React, { useEffect, useState } from "react";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const photoGroups = [
-  ["/photos/photo1.jpg", "/photos/photo2.jpg", "/photos/photo3.jpg"],
-  ["/photos/IMG_6241.jpg", "/photos/photo2.jpg", "/photos/photo3.jpg"],
+  [`${baseUrl}photos/photo1.jpg`, `${baseUrl}photos/photo2.jpg`, `${baseUrl}photos/photo3.jpg`],
+  [`${baseUrl}photos/IMG_6241.jpg`, `${baseUrl}photos/photo2.jpg`, `${baseUrl}photos/photo3.jpg`],
   // add more groups as needed
 ];
 
