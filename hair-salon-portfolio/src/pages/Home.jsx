@@ -28,7 +28,7 @@ function Home() {
   return (
     <div className="home">
       <div className="hero">
-        <h1>Welcome to Our Hair Studio</h1>
+        <h1>Welcome to My Hair Studio</h1>
       </div>
       <div
         className={`home-photos slideshow ${
