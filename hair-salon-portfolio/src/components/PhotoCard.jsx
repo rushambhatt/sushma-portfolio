@@ -4,7 +4,7 @@ function PhotoCard({photo}) {
 
     return <div className="photo-card">
 
-                <div className="photo-image">
+                <div className={`photo-card ${className}`}>
 
                     <img src={photo.url} alt={photo.title}/>
 
