@@ -27,18 +27,30 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="hero">
-        <h1>Welcome to my hair studio!</h1>
-      </div>
-      <div
-        className={`home-photos slideshow ${
-          isVisible ? "fade-in" : "fade-out"
-        }`}
+      <section 
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(31, 27, 36, 0.55), rgba(31, 27, 36, 0.55)), url(${baseUrl}photos/salon-bg.jpeg)`,
+        }}
       >
-        {photoGroups[currentGroupIndex]?.map((url, index) => (
-          <PhotoCard key={index} className="home-photo-item" photo={{ url }} />
-        ))}
-      </div>
+        <div className="hero-overlay">
+          <h1>Welcome to My Hair Studio</h1>
+
+          <div
+            className={`home-photos slideshow ${
+              isVisible ? "fade-in" : "fade-out"
+            }`}
+          >
+            {photoGroups[currentGroupIndex]?.map((url, index) => (
+              <PhotoCard
+                key={index}
+                className="home-photo-item"
+                photo={{ url }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
