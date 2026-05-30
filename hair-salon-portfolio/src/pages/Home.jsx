@@ -34,7 +34,7 @@ function Home() {
         }}
       >
         <div className="hero-overlay">
-          <h1>Welcome to My Hair Studio</h1>
+          <h1>Welcome to my hair studio!</h1>
 
           <div
             className={`home-photos slideshow ${
