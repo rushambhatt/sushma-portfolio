@@ -3,55 +3,62 @@ import PhotoCard from "../components/PhotoCard";
 function Contact() {
   const baseUrl = import.meta.env.BASE_URL;
 
-  const lifestylePhotos = [
-    {
-      url: `${baseUrl}photos/photo5.jpeg`,
-      title: "This is me!",
-    },
-    {
-      url: `${baseUrl}photos/photo1.jpg`,
-      title: "Family and lifestyle",
-    },
-    {
-      url: `${baseUrl}photos/photo2.jpg`,
-      title: "Behind the scenes",
-    },
-    {
-      url: `${baseUrl}photos/photo3.jpg`,
-      title: "Personality",
-    },
-  ];
+  const mainPhoto = {
+    url: `${baseUrl}photos/photo10.JPG`,
+    title: "Sushma Bhatta",
+  };
 
   return (
     <div className="contact">
-      <div className="contact-text">
-        <h1 className="intro">About Me: Sushma Bhatta</h1>
+      <section className="social-section">
+        <h1 className="intro">Sushma Bhatta</h1>
 
-        <h2 className="aboutMe">
+        <p className="phone-number">
+          <a href="tel:12149606240">(214) 960-6240</a>
+        </p>
+
+        <p className="social-subtitle">Hair Stylist & Beauty Portfolio</p>
+
+        <div className="social-links">
+          <a href="https://www.instagram.com/sushma.bhatta3" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+
+          <a href="https://www.facebook.com/sushma.bhatta3" target="_blank" rel="noreferrer">
+            Facebook
+          </a>
+
+          <a href="https://www.tiktok.com/@bhattasush" target="_blank" rel="noreferrer">
+            TikTok
+          </a>
+        </div>
+
+        <div className="main-contact-photo">
+          <PhotoCard
+            className="contact-item"
+            photo={mainPhoto}
+          />
+        </div>
+      </section>
+
+      <section className="contact-text">
+        <h2 className="about-heading">About Me</h2>
+
+        <p className="aboutMe">
           Born and raised in Nepal, I moved to the United States in 2022 to
           pursue a new challenge — a career in hairstyling.
-        </h2>
+        </p>
 
-        <h2 className="aboutMe">
+        <p className="aboutMe">
           I have always had a passion for hairstyling, and I am excited to share
           my skills and creativity with clients from all walks of life.
-        </h2>
+        </p>
 
-        <h2 className="aboutMe">
+        <p className="aboutMe">
           I am committed to providing excellent customer service and creating a
           welcoming, comfortable environment for my clients.
-        </h2>
-      </div>
-
-      <div className="contact-photo">
-        {lifestylePhotos.map((photo, index) => (
-          <PhotoCard
-            key={index}
-            className="contact-item"
-            photo={photo}
-          />
-        ))}
-      </div>
+        </p>
+      </section>
     </div>
   );
 }
