@@ -5,7 +5,7 @@ function NavBar(){
         <div className="navbar-title">
             <h1>Sushma's Hair and Beauty Portfolio</h1>
             <div className="navbar-links">
-                <Link to="/home" className="nav-link">HomePage</Link>
+                <Link to="/home" className="nav-link">Home</Link>
                 <Link to="/contact" className="nav-link">Contact</Link>
             </div>
         </div>

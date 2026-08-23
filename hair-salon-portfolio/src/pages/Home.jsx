@@ -16,6 +16,14 @@ const portfolioImages = [
   `${baseUrl}photos/photo4.jpeg`,
   `${baseUrl}photos/photo5.jpeg`,
   `${baseUrl}photos/photo10.JPG`,
+  `${baseUrl}photos/IMG_0336.jpeg`,
+  `${baseUrl}photos/IMG_1740.jpg`,
+  `${baseUrl}photos/IMG_2014.jpg`,
+  `${baseUrl}photos/IMG_7241.jpeg`,
+  `${baseUrl}photos/IMG_9190.jpg`,
+  `${baseUrl}photos/IMG_9255.jpg`,
+  `${baseUrl}photos/IMG_9984.jpg`,
+  `${baseUrl}photos/IMG_9985.jpg`,
   // add more as you have them
 ];
 
