@@ -3,13 +3,9 @@ import Home from "./pages/Home"
 import {Routes, Route} from "react-router-dom"
 import './App.css'
 import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
 import NavBar from "./components/NavBar";
 
 function App() {
-
-  const photoNumber = 1;
-
   return (
     <div>
       <NavBar />
@@ -18,7 +14,6 @@ function App() {
         <Route path="/" element={<Contact />}/>
         <Route path="/home" element={<Home />}/>
         <Route path="/contact" element={<Contact />}/>
-        <Route path="/portfolio" element={<Portfolio />}/>
       </Routes>
     </main>
     </div>
