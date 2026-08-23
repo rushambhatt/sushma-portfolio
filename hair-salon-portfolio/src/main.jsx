@@ -1,25 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-// import {BrowserRouter} from "react-router-dom"
-import { HashRouter } from "react-router-dom"
+import {BrowserRouter} from "react-router-dom"
 
 import './index.css'
 
 import App from './App.jsx'
 
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <BrowserRouter basename="/sushma-portfolio"> 
-//     <App/> 
-//     </BrowserRouter>
-//   </StrictMode>,
-// )
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename="/sushma-portfolio">
-      <App/>
-    </HashRouter>
+    <BrowserRouter basename="/sushma-portfolio"> 
+    <App/> 
+    </BrowserRouter>
   </StrictMode>,
 )
