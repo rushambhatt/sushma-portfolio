@@ -14,7 +14,6 @@ const portfolioImages = [
   `${baseUrl}photos/photo2.jpg`,
   `${baseUrl}photos/photo3.jpg`,
   `${baseUrl}photos/photo4.jpeg`,
-  `${baseUrl}photos/photo5.jpeg`,
   `${baseUrl}photos/photo10.JPG`,
   `${baseUrl}photos/IMG_0336.jpeg`,
   `${baseUrl}photos/IMG_1740.jpg`,
